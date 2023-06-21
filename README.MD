@@ -11,6 +11,8 @@ npm run start
 * a -> for android app
 * i -> for iOS app
 * r -> to reload
+* m -> toggle menu
+* j -> open debugger
 
 ## Requirements and downloads.
 * Xcode for iOS

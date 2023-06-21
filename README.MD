@@ -18,6 +18,7 @@ npm run start
 
 ## Install react dev-tools
 * sudo npm install -g react-devtools
+* to run dev-tools enter in terminal
 ```
 react-devtools
 ```

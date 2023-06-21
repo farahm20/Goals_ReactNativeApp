@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { View, TextInput, Button, StyleSheet, Modal, Image } from 'react-native'
 
 function GoalInput(props) {
+  console.log('🚀 ~ file: GoalInput.js:5 ~ GoalInput ~ props:', props)
+
   const [enteredGoalText, setEnteredGoalText] = useState('')
 
   function goalInputHandler(enteredText) {
@@ -28,10 +30,14 @@ function GoalInput(props) {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="Add Goal" onPress={addGoalHandler} />
+            <Button
+              title="Add Goal"
+              onPress={addGoalHandler}
+              color={'purple'}
+            />
           </View>
           <View style={styles.button}>
-            <Button title="Cancel" onPress={props.onCancel} />
+            <Button title="Cancel" onPress={props.onCancel} color={'pink'} />
           </View>
         </View>
       </View>
@@ -47,11 +53,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: '#311b6b',
+    backgroundColor: '#452d82',
   },
   textInput: {
-    borderWidth: 1,
-    borderColor: '#cccccc',
+    borderWidth: 3,
+    borderColor: 'black',
+    borderRadius: 10,
+    backgroundColor: '#7765a0',
     width: '100%',
     padding: 8,
   },
